@@ -1,17 +1,12 @@
 import random
 import time
+from progress_bar import *
 
 # Define a list of possible program names and actions
 programs = ['firefox', 'chrome', 'notepad', 'explorer', 'cmd', 'powershell']
 actions = ['running', 'loading', 'updating', 'scanning', 'installing']
 
-# Define a function to print a progress bar
-def print_progress_bar(progress):
-    bar_length = 40
-    filled_length = int(round(bar_length * progress))
-    bar = '#' * filled_length + '-' * (bar_length - filled_length)
-    print(f'[{bar}] {progress * 100:.0f}%', end='')
-    print('\r', end='')
+numbers_only(114514, 500, 5)
 
 # Loop forever
 while True:
